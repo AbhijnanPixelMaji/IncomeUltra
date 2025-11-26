@@ -25,15 +25,15 @@ extension Color {
             alternateText: .init(.alternateText),
             accentContrastText: .init(.accentContrastText),
             primaryAction: .init(.primaryAction),
-            nutralAction: .init(.nutralAction),
-            destructuve: .init(.destructuve),
+            nutralAction: .init(.neutralAction),
+            destructuve: .init(.destructive),
             success: .init(.success),
             warning: .init(.warning),
             info: .init(.info),
             error: .init(.error),
             inProgress: .init(.inProgress),
             divider: .init(.divider),
-            miscelaneous: .init(.miscelaneous)
+            miscelaneous: .init(.miscellaneous)
         )
     }
 }
@@ -59,10 +59,14 @@ struct AppColorTheme{
     let miscelaneous: Color
 }
 
-#Preview {
+#Preview("Light Mode") {
     Preview()
+        .preferredColorScheme(.light)
 }
-
+#Preview("Dark Mode") {
+    Preview()
+        .preferredColorScheme(.dark)
+}
 fileprivate struct Preview: View {
     var body: some View {
         VStack {
@@ -82,7 +86,7 @@ fileprivate struct Preview: View {
             Button{ } label: {
                 Text("Get Started")
                     .padding()
-                    .background(Color.appTheme.primaryAction)
+                    .background(Color.appTheme.accent)
                     .cornerRadius(8)
                     .foregroundColor(.appTheme.accentContrastText)
             }
