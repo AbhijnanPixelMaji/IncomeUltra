@@ -56,7 +56,7 @@ private extension WelcomeView {
             Text("Get Started")
                 .primaryButton()
                 .button (.press){
-                    
+                    shouldShowWelcomeView = false
                 }
               
     }
