@@ -32,9 +32,9 @@ struct AppInfoLiveStore {
 
 extension AppInfoLiveStore{
     struct Agreements: Codable {
-        let privacyPolicyUrl: String = "https://www.genssyioscode.com/projects/income-ultra"
-        let termsAndConditionsUrl: String = "https://www.genssyioscode.com/projects/income-ultra"
-        let copyrightPolicyUrl: String = "https://www.genssyioscode.com/projects/income-ultra"
-        let disclaimeryUrl: String = "https://www.genssyioscode.com/projects/income-ultra"
+        var privacyPolicyUrl: String = "https://www.genssyioscode.com/projects/income-ultra"
+        var termsAndConditionsUrl: String = "https://www.genssyioscode.com/projects/income-ultra"
+        var copyrightPolicyUrl: String = "https://www.genssyioscode.com/projects/income-ultra"
+        var disclaimeryUrl: String = "https://www.genssyioscode.com/projects/income-ultra"
     }
 }

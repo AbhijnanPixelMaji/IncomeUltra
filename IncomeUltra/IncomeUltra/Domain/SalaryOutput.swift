@@ -1,0 +1,20 @@
+//
+//  SalaryOutput.swift
+//  IncomeUltra
+//
+//  Created by Abhijnan Maji on 28/11/25.
+//
+
+import Foundation
+
+ struct SalaryOutput {
+     let hourlyWage: Double
+     let takeHomePay: Pay
+     let grossPay: Pay
+     
+     init(hourlyWage: Double = 0.0, takeHomePay: Pay = .init(incomeType: .takeHome), grossPay: Pay = .init(incomeType: .gross)) {
+         self.hourlyWage = hourlyWage
+         self.takeHomePay = takeHomePay
+         self.grossPay = grossPay
+     }
+}
