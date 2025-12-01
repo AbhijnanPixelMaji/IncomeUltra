@@ -1,0 +1,21 @@
+//
+//  View+InputTextField.swift
+//  IncomeUltra
+//
+//  Created by Abhijnan Maji on 30/11/25.
+//
+
+import SwiftUI
+
+extension View {
+    func inputTextField() -> some View {
+        self
+            .keyboardType(.decimalPad)
+            .padding(12)
+            .frame(maxWidth: .infinity)
+            .background(Color.appTheme.cellBackground)
+            .cornerRadius(.textfield)
+            .shadow(.regular)
+        
+    }
+}

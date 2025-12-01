@@ -33,6 +33,7 @@ private extension IncomeView{
             .padding(.vertical, 8)
         }
     }
+       
     
     @ViewBuilder
     var salaryView: some View{
